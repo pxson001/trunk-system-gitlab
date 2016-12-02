@@ -1,0 +1,38 @@
+version: '2'
+services:
+  my-postgres:
+    image: postgres
+    container_name: my-postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - "db-data:/var/lib/postgresql/data"
+    environment:
+      POSTGRES_USER: postgres
+    
+  trunk-image:
+    image: trunk-image
+    build: ./trunk.cocoapods.org
+    container_name: trunk-image
+    command: bash -c "ruby -v; cd Humus && rake db:bootstrap && cd .. && ls && TRUNK_APP_ADMIN_PASSWORD=admin GH_TOKEN=13de8c00cc7b4fedc6722365100d710d364b69ac rake serve"
+    volumes:
+      - ./trunk.cocoapods.org:/trunk
+    ports:
+      - "4567:4567"
+    depends_on:
+    - my-postgres
+
+  search-image:
+    image: search-image
+    build: ./search-api
+    container_name: search-image
+    command: bash -c "rake serve"
+    volumes:
+     - ./search-api:/search
+    ports:
+      - "8888:8888"
+    depends_on:
+    - my-postgres
+
+volumes:
+  db-data:

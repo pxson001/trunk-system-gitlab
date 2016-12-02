@@ -1,0 +1,84 @@
+--- !ruby/object:REST::Response
+status_code: 201
+headers:
+  server:
+  - GitHub.com
+  date:
+  - Fri, 06 Dec 2013 19:15:12 GMT
+  content-type:
+  - application/json; charset=utf-8
+  status:
+  - 201 Created
+  x-ratelimit-limit:
+  - '5000'
+  x-ratelimit-remaining:
+  - '4994'
+  x-ratelimit-reset:
+  - '1386360518'
+  cache-control:
+  - private, max-age=60, s-maxage=60
+  etag:
+  - '"672c0801fc2dc3fac372803ac5327fd1"'
+  vary:
+  - Accept, Authorization, Cookie, X-GitHub-OTP
+  x-github-media-type:
+  - github.beta
+  x-content-type-options:
+  - nosniff
+  content-length:
+  - '1983'
+  access-control-allow-credentials:
+  - 'true'
+  access-control-expose-headers:
+  - ETag, Link, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes,
+    X-Accepted-OAuth-Scopes, X-Poll-Interval
+  access-control-allow-origin:
+  - '*'
+  x-github-request-id:
+  - 3EA3ABC5:2CE5:393169A:52A22240
+body: !binary |-
+  eyJjb250ZW50Ijp7Im5hbWUiOiJBRk5ldHdvcmtpbmcucG9kc3BlYy55YW1s
+  IiwicGF0aCI6IlNwZWNzL0FGTmV0d29ya2luZy8xLjIuMC9BRk5ldHdvcmtp
+  bmcucG9kc3BlYy55YW1sIiwic2hhIjoiYzNhOGRiYmM4ZGJhZTg1MzgwMTBj
+  OGZiMjY5YWVlOTJkYjkzYTU5YyIsInNpemUiOjEwNTAsInVybCI6Imh0dHBz
+  Oi8vYXBpLmdpdGh1Yi5jb20vcmVwb3MvYWxsb3kvdHJ1bmsuY29jb2Fwb2Rz
+  Lm9yZy10ZXN0L2NvbnRlbnRzL1NwZWNzL0FGTmV0d29ya2luZy8xLjIuMC9B
+  Rk5ldHdvcmtpbmcucG9kc3BlYy55YW1sP3JlZj1tYXN0ZXIiLCJodG1sX3Vy
+  bCI6Imh0dHBzOi8vZ2l0aHViLmNvbS9hbGxveS90cnVuay5jb2NvYXBvZHMu
+  b3JnLXRlc3QvYmxvYi9tYXN0ZXIvU3BlY3MvQUZOZXR3b3JraW5nLzEuMi4w
+  L0FGTmV0d29ya2luZy5wb2RzcGVjLnlhbWwiLCJnaXRfdXJsIjoiaHR0cHM6
+  Ly9hcGkuZ2l0aHViLmNvbS9yZXBvcy9hbGxveS90cnVuay5jb2NvYXBvZHMu
+  b3JnLXRlc3QvZ2l0L2Jsb2JzL2MzYThkYmJjOGRiYWU4NTM4MDEwYzhmYjI2
+  OWFlZTkyZGI5M2E1OWMiLCJ0eXBlIjoiZmlsZSIsIl9saW5rcyI6eyJzZWxm
+  IjoiaHR0cHM6Ly9hcGkuZ2l0aHViLmNvbS9yZXBvcy9hbGxveS90cnVuay5j
+  b2NvYXBvZHMub3JnLXRlc3QvY29udGVudHMvU3BlY3MvQUZOZXR3b3JraW5n
+  LzEuMi4wL0FGTmV0d29ya2luZy5wb2RzcGVjLnlhbWw/cmVmPW1hc3RlciIs
+  ImdpdCI6Imh0dHBzOi8vYXBpLmdpdGh1Yi5jb20vcmVwb3MvYWxsb3kvdHJ1
+  bmsuY29jb2Fwb2RzLm9yZy10ZXN0L2dpdC9ibG9icy9jM2E4ZGJiYzhkYmFl
+  ODUzODAxMGM4ZmIyNjlhZWU5MmRiOTNhNTljIiwiaHRtbCI6Imh0dHBzOi8v
+  Z2l0aHViLmNvbS9hbGxveS90cnVuay5jb2NvYXBvZHMub3JnLXRlc3QvYmxv
+  Yi9tYXN0ZXIvU3BlY3MvQUZOZXR3b3JraW5nLzEuMi4wL0FGTmV0d29ya2lu
+  Zy5wb2RzcGVjLnlhbWwifX0sImNvbW1pdCI6eyJzaGEiOiI5NjQ0ZmE4ZjEy
+  MDZjMDUwNzJmZTdlYmU5MzZjNjRjMThkY2VkNGUzIiwidXJsIjoiaHR0cHM6
+  Ly9hcGkuZ2l0aHViLmNvbS9yZXBvcy9hbGxveS90cnVuay5jb2NvYXBvZHMu
+  b3JnLXRlc3QvZ2l0L2NvbW1pdHMvOTY0NGZhOGYxMjA2YzA1MDcyZmU3ZWJl
+  OTM2YzY0YzE4ZGNlZDRlMyIsImh0bWxfdXJsIjoiaHR0cHM6Ly9naXRodWIu
+  Y29tL2FsbG95L3RydW5rLmNvY29hcG9kcy5vcmctdGVzdC9jb21taXRzLzk2
+  NDRmYThmMTIwNmMwNTA3MmZlN2ViZTkzNmM2NGMxOGRjZWQ0ZTMiLCJhdXRo
+  b3IiOnsibmFtZSI6IkVsb3kgRHVyw6FuIiwiZW1haWwiOiJlbG95LmRlLmVu
+  aWdlQGdtYWlsLmNvbSIsImRhdGUiOiIyMDEzLTEyLTA2VDE5OjE1OjEyWiJ9
+  LCJjb21taXR0ZXIiOnsibmFtZSI6IkNvY29hUG9kc0JvdCIsImVtYWlsIjoi
+  ZWxveS5kZS5lbmlnZStjb2NvYXBvZHMuZ2l0aHViLmJvdEBnbWFpbC5jb20i
+  LCJkYXRlIjoiMjAxMy0xMi0wNlQxOToxNToxMloifSwidHJlZSI6eyJzaGEi
+  OiI5NDY4ODExNjRlZDczM2NjMDUzNzRmMWJiY2RiMjM5ZGU3NTcyZGRlIiwi
+  dXJsIjoiaHR0cHM6Ly9hcGkuZ2l0aHViLmNvbS9yZXBvcy9hbGxveS90cnVu
+  ay5jb2NvYXBvZHMub3JnLXRlc3QvZ2l0L3RyZWVzLzk0Njg4MTE2NGVkNzMz
+  Y2MwNTM3NGYxYmJjZGIyMzlkZTc1NzJkZGUifSwibWVzc2FnZSI6IltBZGRd
+  IEFGTmV0d29ya2luZyAxLjIuMCIsInBhcmVudHMiOlt7InNoYSI6IjljOTU5
+  Mzg4ZTQxMTdlMTIxMGQxZTMxNWViMzM0ZDZlNTRmM2E0NzUiLCJ1cmwiOiJo
+  dHRwczovL2FwaS5naXRodWIuY29tL3JlcG9zL2FsbG95L3RydW5rLmNvY29h
+  cG9kcy5vcmctdGVzdC9naXQvY29tbWl0cy85Yzk1OTM4OGU0MTE3ZTEyMTBk
+  MWUzMTVlYjMzNGQ2ZTU0ZjNhNDc1IiwiaHRtbF91cmwiOiJodHRwczovL2dp
+  dGh1Yi5jb20vYWxsb3kvdHJ1bmsuY29jb2Fwb2RzLm9yZy10ZXN0L2NvbW1p
+  dHMvOWM5NTkzODhlNDExN2UxMjEwZDFlMzE1ZWIzMzRkNmU1NGYzYTQ3NSJ9
+  XX19

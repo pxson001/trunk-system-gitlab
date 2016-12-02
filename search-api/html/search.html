@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>DEMO</title>
+
+<style type="text/css">
+.outer {
+    display: table;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.middle {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.inner {
+    margin-left: auto;
+    margin-right: auto; 
+    width: 50%;
+}
+</style>
+
+</head>
+  <body>
+
+<div class="outer">
+  <div class="middle">
+    <div class="inner">
+      <form role="form" method="get">
+        <input type="text" class="form-control input-lg" id="keyword" placeholder="Enter keyword">
+      </form>
+      <ul id="content" class="list-group"></ul>
+    </div>
+  </div>
+</div>
+
+
+
+    <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+
+  <script type="text/javascript">
+
+  $(document).ready(function() {
+    $('#keyword').on('input', function() {
+      var searchKeyword = $(this).val();
+      if (searchKeyword.length >= 1) {
+        $.get('http://192.168.99.100:8888/pods/' + searchKeyword + '/latest', function(data) {
+          $('ul#content').empty()
+          $.each(data, function() {
+            $('ul#content').append('<li class="list-group-item"><a href="https://s3-ap-southeast-1.amazonaws.com/pxson001.trunk.cocoapods.org/docsets/' + this.name + '/' + this.version + '/index.html">' + this.name + '</a></li>');
+          });
+        }, "json");
+      } else {
+        $('ul#content').empty();
+      }
+    });
+  });
+
+  </script>
+  </body>
+</html>

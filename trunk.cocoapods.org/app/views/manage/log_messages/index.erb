@@ -1,0 +1,32 @@
+<% @title = 'Log Messages' %>
+
+<h2>Log Messages</h2>
+
+<table class="table table-bordered table-hover">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Reference</th>
+      <th>Created At</th>
+      <th>Level</th>
+      <th>Message</th>
+      <th>Pod</th>
+      <th>Version</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @collection.each do |message| %>
+      <tr class="<%= message.level %>">
+        <!-- TODO Rename message.message to message.text. -->
+        <% reference_link = "<a href=\"?reference=#{message.reference}\">#{message.reference}</a>" %>
+        <% if message.pod_version %>
+          <% pod_name = message.pod_version.pod.name %>
+          <% pod_version = message.pod_version.name %>
+        <% end %>
+        <% [message.id, reference_link, message.created_at.to_formatted_s(:rfc822), message.level, message.message, pod_name, pod_version].each do |value| %>
+          <td><%= value || 'n/a' %></a></td>
+        <% end %>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
