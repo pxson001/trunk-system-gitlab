@@ -36,6 +36,22 @@ module Pod
         raise
       end
 
+
+      def pull!
+        log(:info, 'Get reposite file info')
+
+        response, duration = measure_duration do
+          get_reposite_file
+        end
+
+        log_response(response, committer, duration)
+        response
+      rescue Object => error
+        message = "failed with error: #{error.message}."
+        log(:error, message, committer, error.backtrace.join("\n\t\t"))
+        raise
+      end
+
       protected
 
       def perform_action
@@ -49,6 +65,12 @@ module Pod
         else
           raise "Unknown push job type: #{job_type}"
         end
+      end
+
+      def get_reposite_file()
+        self.class.github.get_reposite_file(
+          pod_version.destination_path
+        )
       end
 
       def new_commit(update: false)
@@ -106,7 +128,7 @@ module Pod
 
       def self.github
         @github ||= GitHub.new(
-          ENV['GH_REPO'],
+          ENV['GL_PROJ_ID'],
           :username => ENV['GH_TOKEN'],
           :password => 'x-oauth-basic',
         )

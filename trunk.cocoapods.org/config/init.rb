@@ -4,7 +4,7 @@ ROOT = File.expand_path('../../', __FILE__)
 $LOAD_PATH.unshift File.join(ROOT, 'lib')
 
 ENV['RACK_ENV'] ||= 'development'
-ENV['DATABASE_URL'] ||= "postgres://postgres@my-postgres:5432/trunk_cocoapods_org_#{ENV['RACK_ENV']}"
+ENV['DATABASE_URL'] ||= "postgres://postgres@my-postgres/trunk_cocoapods_org_#{ENV['RACK_ENV']}"
 ENV['GH_REPO'] ||= 'pxson001/trunk.cocoapods.org-test'
 ENV['OUTGOING_HOOK_PATH'] ||= 'jmango360'
 ENV['INCOMING_HOOK_PATH'] ||= 'jmango360'

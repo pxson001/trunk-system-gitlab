@@ -689,3 +689,390 @@
 [11/23/16 10:51:58 +0700 MacBook-Pro.local (52564)] INFO : Installing Dalli Memcache instrumentation
 [11/23/16 10:54:26 +0700 MacBook-Pro.local (52564)] ERROR : Invalid license key, please contact support@newrelic.com
 [11/23/16 10:54:26 +0700 MacBook-Pro.local (52564)] ERROR : Visit NewRelic.com to obtain a valid license key, or to upgrade your account.
+[2016-12-08 10:00:35 +0700 MacBook-Pro.local (10747)] INFO : Starting the New Relic agent in "development" environment.
+[2016-12-08 10:00:35 +0700 MacBook-Pro.local (10747)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-12-08 10:00:35 +0700 MacBook-Pro.local (10747)] INFO : Reading configuration from config/newrelic.yml (/Users/son/Documents/cocoapods-eco-system/trunk.cocoapods.org)
+[2016-12-08 10:00:35 +0700 MacBook-Pro.local (10747)] ERROR : Failed to read or parse configuration file at config/newrelic.yml
+[2016-12-08 10:00:35 +0700 MacBook-Pro.local (10747)] ERROR : Psych::SyntaxError: (<unknown>): did not find expected key while parsing a block mapping at line 137 column 5
+[2016-12-08 10:00:35 +0700 MacBook-Pro.local (10747)] INFO : Environment: development
+[2016-12-08 10:00:35 +0700 MacBook-Pro.local (10747)] INFO : Dispatcher: thin
+[2016-12-08 10:00:35 +0700 MacBook-Pro.local (10747)] INFO : Application: development
+[2016-12-08 10:00:35 +0700 MacBook-Pro.local (10747)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[2016-12-08 10:00:35 +0700 MacBook-Pro.local (10747)] INFO : Installing Net instrumentation
+[2016-12-08 10:00:35 +0700 MacBook-Pro.local (10747)] INFO : Installing Sinatra instrumentation
+[2016-12-08 10:00:35 +0700 MacBook-Pro.local (10747)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-12-08 10:00:35 +0700 MacBook-Pro.local (10747)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-12-08 10:00:35 +0700 MacBook-Pro.local (10747)] INFO : Installing Sequel instrumentation
+[2016-12-08 10:00:35 +0700 MacBook-Pro.local (10747)] INFO : Finished instrumentation
+[2016-12-08 10:00:35 +0700 MacBook-Pro.local (10747)] INFO : Doing deferred dependency-detection before Rack startup
+[2016-12-08 10:00:35 +0700 MacBook-Pro.local (10747)] INFO : Installing Memcache instrumentation for dalli gem
+[2016-12-08 10:03:36 +0700 MacBook-Pro.local (10747)] ERROR : Invalid license key, please contact support@newrelic.com
+[2016-12-08 10:03:36 +0700 MacBook-Pro.local (10747)] ERROR : Visit NewRelic.com to obtain a valid license key, or to upgrade your account.
+[2016-12-08 10:08:18 +0700 MacBook-Pro.local (11222)] INFO : Starting the New Relic agent in "development" environment.
+[2016-12-08 10:08:18 +0700 MacBook-Pro.local (11222)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-12-08 10:08:18 +0700 MacBook-Pro.local (11222)] INFO : Reading configuration from config/newrelic.yml (/Users/son/Documents/cocoapods-eco-system/trunk.cocoapods.org)
+[2016-12-08 10:08:18 +0700 MacBook-Pro.local (11222)] ERROR : Failed to read or parse configuration file at config/newrelic.yml
+[2016-12-08 10:08:18 +0700 MacBook-Pro.local (11222)] ERROR : Psych::SyntaxError: (<unknown>): did not find expected key while parsing a block mapping at line 137 column 5
+[2016-12-08 10:08:18 +0700 MacBook-Pro.local (11222)] INFO : Environment: development
+[2016-12-08 10:08:18 +0700 MacBook-Pro.local (11222)] INFO : Dispatcher: thin
+[2016-12-08 10:08:18 +0700 MacBook-Pro.local (11222)] INFO : Application: development
+[2016-12-08 10:08:18 +0700 MacBook-Pro.local (11222)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[2016-12-08 10:08:18 +0700 MacBook-Pro.local (11222)] INFO : Installing Net instrumentation
+[2016-12-08 10:08:18 +0700 MacBook-Pro.local (11222)] INFO : Installing Sinatra instrumentation
+[2016-12-08 10:08:18 +0700 MacBook-Pro.local (11222)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-12-08 10:08:18 +0700 MacBook-Pro.local (11222)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-12-08 10:08:18 +0700 MacBook-Pro.local (11222)] INFO : Installing Sequel instrumentation
+[2016-12-08 10:08:18 +0700 MacBook-Pro.local (11222)] INFO : Finished instrumentation
+[2016-12-08 10:08:18 +0700 MacBook-Pro.local (11222)] INFO : Doing deferred dependency-detection before Rack startup
+[2016-12-08 10:08:18 +0700 MacBook-Pro.local (11222)] INFO : Installing Memcache instrumentation for dalli gem
+[2016-12-08 10:10:42 +0700 MacBook-Pro.local (11222)] ERROR : Invalid license key, please contact support@newrelic.com
+[2016-12-08 10:10:42 +0700 MacBook-Pro.local (11222)] ERROR : Visit NewRelic.com to obtain a valid license key, or to upgrade your account.
+[2016-12-08 10:10:42 +0700 MacBook-Pro.local (11222)] WARN : Passing request_params to notice_error is no longer supported. Set values on the enclosing transaction or record them as custom attributes instead.
+[2016-12-08 10:10:42 +0700 MacBook-Pro.local (11222)] WARN : Passing referer to notice_error is no longer supported. Set values on the enclosing transaction or record them as custom attributes instead.
+[2016-12-08 10:18:06 +0700 MacBook-Pro.local (11543)] INFO : Starting the New Relic agent in "development" environment.
+[2016-12-08 10:18:06 +0700 MacBook-Pro.local (11543)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-12-08 10:18:06 +0700 MacBook-Pro.local (11543)] INFO : Reading configuration from config/newrelic.yml (/Users/son/Documents/cocoapods-eco-system/trunk.cocoapods.org)
+[2016-12-08 10:18:06 +0700 MacBook-Pro.local (11543)] ERROR : Failed to read or parse configuration file at config/newrelic.yml
+[2016-12-08 10:18:06 +0700 MacBook-Pro.local (11543)] ERROR : Psych::SyntaxError: (<unknown>): did not find expected key while parsing a block mapping at line 137 column 5
+[2016-12-08 10:18:06 +0700 MacBook-Pro.local (11543)] INFO : Environment: development
+[2016-12-08 10:18:06 +0700 MacBook-Pro.local (11543)] INFO : Dispatcher: thin
+[2016-12-08 10:18:06 +0700 MacBook-Pro.local (11543)] INFO : Application: development
+[2016-12-08 10:18:06 +0700 MacBook-Pro.local (11543)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[2016-12-08 10:18:06 +0700 MacBook-Pro.local (11543)] INFO : Installing Net instrumentation
+[2016-12-08 10:18:06 +0700 MacBook-Pro.local (11543)] INFO : Installing Sinatra instrumentation
+[2016-12-08 10:18:06 +0700 MacBook-Pro.local (11543)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-12-08 10:18:06 +0700 MacBook-Pro.local (11543)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-12-08 10:18:06 +0700 MacBook-Pro.local (11543)] INFO : Installing Sequel instrumentation
+[2016-12-08 10:18:06 +0700 MacBook-Pro.local (11543)] INFO : Finished instrumentation
+[2016-12-08 10:18:06 +0700 MacBook-Pro.local (11543)] INFO : Doing deferred dependency-detection before Rack startup
+[2016-12-08 10:18:06 +0700 MacBook-Pro.local (11543)] INFO : Installing Memcache instrumentation for dalli gem
+[2016-12-08 10:22:14 +0700 MacBook-Pro.local (11543)] ERROR : Invalid license key, please contact support@newrelic.com
+[2016-12-08 10:22:14 +0700 MacBook-Pro.local (11543)] ERROR : Visit NewRelic.com to obtain a valid license key, or to upgrade your account.
+[2016-12-08 10:22:16 +0700 MacBook-Pro.local (11543)] WARN : Passing request_params to notice_error is no longer supported. Set values on the enclosing transaction or record them as custom attributes instead.
+[2016-12-08 10:22:16 +0700 MacBook-Pro.local (11543)] WARN : Passing referer to notice_error is no longer supported. Set values on the enclosing transaction or record them as custom attributes instead.
+[2016-12-08 10:50:03 +0700 MacBook-Pro.local (12047)] INFO : Starting the New Relic agent in "development" environment.
+[2016-12-08 10:50:03 +0700 MacBook-Pro.local (12047)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-12-08 10:50:03 +0700 MacBook-Pro.local (12047)] INFO : Reading configuration from config/newrelic.yml (/Users/son/Documents/cocoapods-eco-system/trunk.cocoapods.org)
+[2016-12-08 10:50:03 +0700 MacBook-Pro.local (12047)] ERROR : Failed to read or parse configuration file at config/newrelic.yml
+[2016-12-08 10:50:03 +0700 MacBook-Pro.local (12047)] ERROR : Psych::SyntaxError: (<unknown>): did not find expected key while parsing a block mapping at line 137 column 5
+[2016-12-08 10:50:03 +0700 MacBook-Pro.local (12047)] INFO : Environment: development
+[2016-12-08 10:50:03 +0700 MacBook-Pro.local (12047)] INFO : Dispatcher: thin
+[2016-12-08 10:50:03 +0700 MacBook-Pro.local (12047)] INFO : Application: development
+[2016-12-08 10:50:03 +0700 MacBook-Pro.local (12047)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[2016-12-08 10:50:03 +0700 MacBook-Pro.local (12047)] INFO : Installing Net instrumentation
+[2016-12-08 10:50:03 +0700 MacBook-Pro.local (12047)] INFO : Installing Sinatra instrumentation
+[2016-12-08 10:50:03 +0700 MacBook-Pro.local (12047)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-12-08 10:50:03 +0700 MacBook-Pro.local (12047)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-12-08 10:50:03 +0700 MacBook-Pro.local (12047)] INFO : Installing Sequel instrumentation
+[2016-12-08 10:50:03 +0700 MacBook-Pro.local (12047)] INFO : Finished instrumentation
+[2016-12-08 10:50:04 +0700 MacBook-Pro.local (12047)] INFO : Doing deferred dependency-detection before Rack startup
+[2016-12-08 10:50:04 +0700 MacBook-Pro.local (12047)] INFO : Installing Memcache instrumentation for dalli gem
+[2016-12-08 10:50:36 +0700 MacBook-Pro.local (12047)] ERROR : Invalid license key, please contact support@newrelic.com
+[2016-12-08 10:50:36 +0700 MacBook-Pro.local (12047)] ERROR : Visit NewRelic.com to obtain a valid license key, or to upgrade your account.
+[2016-12-08 10:52:21 +0700 MacBook-Pro.local (12047)] WARN : Passing request_params to notice_error is no longer supported. Set values on the enclosing transaction or record them as custom attributes instead.
+[2016-12-08 10:52:21 +0700 MacBook-Pro.local (12047)] WARN : Passing referer to notice_error is no longer supported. Set values on the enclosing transaction or record them as custom attributes instead.
+[2016-12-08 11:00:54 +0700 MacBook-Pro.local (12819)] INFO : Starting the New Relic agent in "development" environment.
+[2016-12-08 11:00:54 +0700 MacBook-Pro.local (12819)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-12-08 11:00:54 +0700 MacBook-Pro.local (12819)] INFO : Reading configuration from config/newrelic.yml (/Users/son/Documents/cocoapods-eco-system/trunk.cocoapods.org)
+[2016-12-08 11:00:54 +0700 MacBook-Pro.local (12819)] ERROR : Failed to read or parse configuration file at config/newrelic.yml
+[2016-12-08 11:00:54 +0700 MacBook-Pro.local (12819)] ERROR : Psych::SyntaxError: (<unknown>): did not find expected key while parsing a block mapping at line 137 column 5
+[2016-12-08 11:00:54 +0700 MacBook-Pro.local (12819)] INFO : Environment: development
+[2016-12-08 11:00:54 +0700 MacBook-Pro.local (12819)] INFO : Dispatcher: thin
+[2016-12-08 11:00:54 +0700 MacBook-Pro.local (12819)] INFO : Application: development
+[2016-12-08 11:00:54 +0700 MacBook-Pro.local (12819)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[2016-12-08 11:00:54 +0700 MacBook-Pro.local (12819)] INFO : Installing Net instrumentation
+[2016-12-08 11:00:54 +0700 MacBook-Pro.local (12819)] INFO : Installing Sinatra instrumentation
+[2016-12-08 11:00:54 +0700 MacBook-Pro.local (12819)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-12-08 11:00:54 +0700 MacBook-Pro.local (12819)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-12-08 11:00:54 +0700 MacBook-Pro.local (12819)] INFO : Installing Sequel instrumentation
+[2016-12-08 11:00:54 +0700 MacBook-Pro.local (12819)] INFO : Finished instrumentation
+[2016-12-08 11:00:55 +0700 MacBook-Pro.local (12819)] INFO : Doing deferred dependency-detection before Rack startup
+[2016-12-08 11:00:55 +0700 MacBook-Pro.local (12819)] INFO : Installing Memcache instrumentation for dalli gem
+[2016-12-08 11:01:59 +0700 MacBook-Pro.local (12819)] ERROR : Invalid license key, please contact support@newrelic.com
+[2016-12-08 11:01:59 +0700 MacBook-Pro.local (12819)] ERROR : Visit NewRelic.com to obtain a valid license key, or to upgrade your account.
+[2016-12-08 11:02:02 +0700 MacBook-Pro.local (12819)] WARN : Passing request_params to notice_error is no longer supported. Set values on the enclosing transaction or record them as custom attributes instead.
+[2016-12-08 11:02:02 +0700 MacBook-Pro.local (12819)] WARN : Passing referer to notice_error is no longer supported. Set values on the enclosing transaction or record them as custom attributes instead.
+[2016-12-08 11:06:42 +0700 MacBook-Pro.local (13023)] INFO : Starting the New Relic agent in "development" environment.
+[2016-12-08 11:06:42 +0700 MacBook-Pro.local (13023)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-12-08 11:06:42 +0700 MacBook-Pro.local (13023)] INFO : Reading configuration from config/newrelic.yml (/Users/son/Documents/cocoapods-eco-system/trunk.cocoapods.org)
+[2016-12-08 11:06:42 +0700 MacBook-Pro.local (13023)] ERROR : Failed to read or parse configuration file at config/newrelic.yml
+[2016-12-08 11:06:42 +0700 MacBook-Pro.local (13023)] ERROR : Psych::SyntaxError: (<unknown>): did not find expected key while parsing a block mapping at line 137 column 5
+[2016-12-08 11:06:42 +0700 MacBook-Pro.local (13023)] INFO : Environment: development
+[2016-12-08 11:06:42 +0700 MacBook-Pro.local (13023)] INFO : Dispatcher: thin
+[2016-12-08 11:06:42 +0700 MacBook-Pro.local (13023)] INFO : Application: development
+[2016-12-08 11:06:42 +0700 MacBook-Pro.local (13023)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[2016-12-08 11:06:42 +0700 MacBook-Pro.local (13023)] INFO : Installing Net instrumentation
+[2016-12-08 11:06:42 +0700 MacBook-Pro.local (13023)] INFO : Installing Sinatra instrumentation
+[2016-12-08 11:06:42 +0700 MacBook-Pro.local (13023)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-12-08 11:06:42 +0700 MacBook-Pro.local (13023)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-12-08 11:06:42 +0700 MacBook-Pro.local (13023)] INFO : Installing Sequel instrumentation
+[2016-12-08 11:06:42 +0700 MacBook-Pro.local (13023)] INFO : Finished instrumentation
+[2016-12-08 11:06:42 +0700 MacBook-Pro.local (13023)] INFO : Doing deferred dependency-detection before Rack startup
+[2016-12-08 11:06:42 +0700 MacBook-Pro.local (13023)] INFO : Installing Memcache instrumentation for dalli gem
+[2016-12-08 11:07:12 +0700 MacBook-Pro.local (13023)] ERROR : Invalid license key, please contact support@newrelic.com
+[2016-12-08 11:07:12 +0700 MacBook-Pro.local (13023)] ERROR : Visit NewRelic.com to obtain a valid license key, or to upgrade your account.
+[2016-12-08 11:07:14 +0700 MacBook-Pro.local (13023)] WARN : Passing request_params to notice_error is no longer supported. Set values on the enclosing transaction or record them as custom attributes instead.
+[2016-12-08 11:07:14 +0700 MacBook-Pro.local (13023)] WARN : Passing referer to notice_error is no longer supported. Set values on the enclosing transaction or record them as custom attributes instead.
+[2016-12-08 11:21:14 +0700 MacBook-Pro.local (13333)] INFO : Starting the New Relic agent in "development" environment.
+[2016-12-08 11:21:14 +0700 MacBook-Pro.local (13333)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-12-08 11:21:14 +0700 MacBook-Pro.local (13333)] INFO : Reading configuration from config/newrelic.yml (/Users/son/Documents/cocoapods-eco-system/trunk.cocoapods.org)
+[2016-12-08 11:21:14 +0700 MacBook-Pro.local (13333)] ERROR : Failed to read or parse configuration file at config/newrelic.yml
+[2016-12-08 11:21:14 +0700 MacBook-Pro.local (13333)] ERROR : Psych::SyntaxError: (<unknown>): did not find expected key while parsing a block mapping at line 137 column 5
+[2016-12-08 11:21:14 +0700 MacBook-Pro.local (13333)] INFO : Environment: development
+[2016-12-08 11:21:14 +0700 MacBook-Pro.local (13333)] INFO : Dispatcher: thin
+[2016-12-08 11:21:14 +0700 MacBook-Pro.local (13333)] INFO : Application: development
+[2016-12-08 11:21:14 +0700 MacBook-Pro.local (13333)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[2016-12-08 11:21:14 +0700 MacBook-Pro.local (13333)] INFO : Installing Net instrumentation
+[2016-12-08 11:21:14 +0700 MacBook-Pro.local (13333)] INFO : Installing Sinatra instrumentation
+[2016-12-08 11:21:14 +0700 MacBook-Pro.local (13333)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-12-08 11:21:14 +0700 MacBook-Pro.local (13333)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-12-08 11:21:14 +0700 MacBook-Pro.local (13333)] INFO : Installing Sequel instrumentation
+[2016-12-08 11:21:14 +0700 MacBook-Pro.local (13333)] INFO : Finished instrumentation
+[2016-12-08 11:21:14 +0700 MacBook-Pro.local (13333)] INFO : Doing deferred dependency-detection before Rack startup
+[2016-12-08 11:21:14 +0700 MacBook-Pro.local (13333)] INFO : Installing Memcache instrumentation for dalli gem
+[2016-12-08 11:22:00 +0700 MacBook-Pro.local (13333)] ERROR : Invalid license key, please contact support@newrelic.com
+[2016-12-08 11:22:00 +0700 MacBook-Pro.local (13333)] ERROR : Visit NewRelic.com to obtain a valid license key, or to upgrade your account.
+[2016-12-08 11:22:03 +0700 MacBook-Pro.local (13333)] WARN : Passing request_params to notice_error is no longer supported. Set values on the enclosing transaction or record them as custom attributes instead.
+[2016-12-08 11:22:03 +0700 MacBook-Pro.local (13333)] WARN : Passing referer to notice_error is no longer supported. Set values on the enclosing transaction or record them as custom attributes instead.
+[2016-12-08 11:22:59 +0700 MacBook-Pro.local (13548)] INFO : Starting the New Relic agent in "development" environment.
+[2016-12-08 11:22:59 +0700 MacBook-Pro.local (13548)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-12-08 11:22:59 +0700 MacBook-Pro.local (13548)] INFO : Reading configuration from config/newrelic.yml (/Users/son/Documents/cocoapods-eco-system/trunk.cocoapods.org)
+[2016-12-08 11:22:59 +0700 MacBook-Pro.local (13548)] ERROR : Failed to read or parse configuration file at config/newrelic.yml
+[2016-12-08 11:22:59 +0700 MacBook-Pro.local (13548)] ERROR : Psych::SyntaxError: (<unknown>): did not find expected key while parsing a block mapping at line 137 column 5
+[2016-12-08 11:22:59 +0700 MacBook-Pro.local (13548)] INFO : Environment: development
+[2016-12-08 11:22:59 +0700 MacBook-Pro.local (13548)] INFO : Dispatcher: thin
+[2016-12-08 11:22:59 +0700 MacBook-Pro.local (13548)] INFO : Application: development
+[2016-12-08 11:22:59 +0700 MacBook-Pro.local (13548)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[2016-12-08 11:22:59 +0700 MacBook-Pro.local (13548)] INFO : Installing Net instrumentation
+[2016-12-08 11:22:59 +0700 MacBook-Pro.local (13548)] INFO : Installing Sinatra instrumentation
+[2016-12-08 11:22:59 +0700 MacBook-Pro.local (13548)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-12-08 11:22:59 +0700 MacBook-Pro.local (13548)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-12-08 11:22:59 +0700 MacBook-Pro.local (13548)] INFO : Installing Sequel instrumentation
+[2016-12-08 11:22:59 +0700 MacBook-Pro.local (13548)] INFO : Finished instrumentation
+[2016-12-08 11:22:59 +0700 MacBook-Pro.local (13548)] INFO : Doing deferred dependency-detection before Rack startup
+[2016-12-08 11:22:59 +0700 MacBook-Pro.local (13548)] INFO : Installing Memcache instrumentation for dalli gem
+[2016-12-08 11:23:37 +0700 MacBook-Pro.local (13548)] ERROR : Invalid license key, please contact support@newrelic.com
+[2016-12-08 11:23:37 +0700 MacBook-Pro.local (13548)] ERROR : Visit NewRelic.com to obtain a valid license key, or to upgrade your account.
+[2016-12-08 11:25:29 +0700 MacBook-Pro.local (13548)] WARN : Passing request_params to notice_error is no longer supported. Set values on the enclosing transaction or record them as custom attributes instead.
+[2016-12-08 11:25:29 +0700 MacBook-Pro.local (13548)] WARN : Passing referer to notice_error is no longer supported. Set values on the enclosing transaction or record them as custom attributes instead.
+[2016-12-08 11:27:24 +0700 MacBook-Pro.local (14490)] INFO : Starting the New Relic agent in "development" environment.
+[2016-12-08 11:27:24 +0700 MacBook-Pro.local (14490)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-12-08 11:27:24 +0700 MacBook-Pro.local (14490)] INFO : Reading configuration from config/newrelic.yml (/Users/son/Documents/cocoapods-eco-system/trunk.cocoapods.org)
+[2016-12-08 11:27:24 +0700 MacBook-Pro.local (14490)] ERROR : Failed to read or parse configuration file at config/newrelic.yml
+[2016-12-08 11:27:24 +0700 MacBook-Pro.local (14490)] ERROR : Psych::SyntaxError: (<unknown>): did not find expected key while parsing a block mapping at line 137 column 5
+[2016-12-08 11:27:24 +0700 MacBook-Pro.local (14490)] INFO : Environment: development
+[2016-12-08 11:27:24 +0700 MacBook-Pro.local (14490)] INFO : Dispatcher: thin
+[2016-12-08 11:27:24 +0700 MacBook-Pro.local (14490)] INFO : Application: development
+[2016-12-08 11:27:24 +0700 MacBook-Pro.local (14490)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[2016-12-08 11:27:24 +0700 MacBook-Pro.local (14490)] INFO : Installing Net instrumentation
+[2016-12-08 11:27:24 +0700 MacBook-Pro.local (14490)] INFO : Installing Sinatra instrumentation
+[2016-12-08 11:27:24 +0700 MacBook-Pro.local (14490)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-12-08 11:27:24 +0700 MacBook-Pro.local (14490)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-12-08 11:27:24 +0700 MacBook-Pro.local (14490)] INFO : Installing Sequel instrumentation
+[2016-12-08 11:27:24 +0700 MacBook-Pro.local (14490)] INFO : Finished instrumentation
+[2016-12-08 11:27:24 +0700 MacBook-Pro.local (14490)] INFO : Doing deferred dependency-detection before Rack startup
+[2016-12-08 11:27:24 +0700 MacBook-Pro.local (14490)] INFO : Installing Memcache instrumentation for dalli gem
+[2016-12-08 11:29:10 +0700 MacBook-Pro.local (14490)] ERROR : Invalid license key, please contact support@newrelic.com
+[2016-12-08 11:29:10 +0700 MacBook-Pro.local (14490)] ERROR : Visit NewRelic.com to obtain a valid license key, or to upgrade your account.
+[2016-12-08 11:32:29 +0700 MacBook-Pro.local (15241)] INFO : Starting the New Relic agent in "development" environment.
+[2016-12-08 11:32:29 +0700 MacBook-Pro.local (15241)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-12-08 11:32:29 +0700 MacBook-Pro.local (15241)] INFO : Reading configuration from config/newrelic.yml (/Users/son/Documents/cocoapods-eco-system/trunk.cocoapods.org)
+[2016-12-08 11:32:29 +0700 MacBook-Pro.local (15241)] ERROR : Failed to read or parse configuration file at config/newrelic.yml
+[2016-12-08 11:32:29 +0700 MacBook-Pro.local (15241)] ERROR : Psych::SyntaxError: (<unknown>): did not find expected key while parsing a block mapping at line 137 column 5
+[2016-12-08 11:32:29 +0700 MacBook-Pro.local (15241)] INFO : Environment: development
+[2016-12-08 11:32:29 +0700 MacBook-Pro.local (15241)] INFO : Dispatcher: thin
+[2016-12-08 11:32:29 +0700 MacBook-Pro.local (15241)] INFO : Application: development
+[2016-12-08 11:32:29 +0700 MacBook-Pro.local (15241)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[2016-12-08 11:32:29 +0700 MacBook-Pro.local (15241)] INFO : Installing Net instrumentation
+[2016-12-08 11:32:29 +0700 MacBook-Pro.local (15241)] INFO : Installing Sinatra instrumentation
+[2016-12-08 11:32:29 +0700 MacBook-Pro.local (15241)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-12-08 11:32:29 +0700 MacBook-Pro.local (15241)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-12-08 11:32:29 +0700 MacBook-Pro.local (15241)] INFO : Installing Sequel instrumentation
+[2016-12-08 11:32:29 +0700 MacBook-Pro.local (15241)] INFO : Finished instrumentation
+[2016-12-08 11:32:30 +0700 MacBook-Pro.local (15241)] INFO : Doing deferred dependency-detection before Rack startup
+[2016-12-08 11:32:30 +0700 MacBook-Pro.local (15241)] INFO : Installing Memcache instrumentation for dalli gem
+[2016-12-08 11:32:55 +0700 MacBook-Pro.local (15241)] ERROR : Invalid license key, please contact support@newrelic.com
+[2016-12-08 11:32:55 +0700 MacBook-Pro.local (15241)] ERROR : Visit NewRelic.com to obtain a valid license key, or to upgrade your account.
+[2016-12-08 11:32:57 +0700 MacBook-Pro.local (15241)] WARN : Passing request_params to notice_error is no longer supported. Set values on the enclosing transaction or record them as custom attributes instead.
+[2016-12-08 11:32:57 +0700 MacBook-Pro.local (15241)] WARN : Passing referer to notice_error is no longer supported. Set values on the enclosing transaction or record them as custom attributes instead.
+[2016-12-08 11:40:41 +0700 MacBook-Pro.local (15500)] INFO : Starting the New Relic agent in "development" environment.
+[2016-12-08 11:40:41 +0700 MacBook-Pro.local (15500)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-12-08 11:40:41 +0700 MacBook-Pro.local (15500)] INFO : Reading configuration from config/newrelic.yml (/Users/son/Documents/cocoapods-eco-system/trunk.cocoapods.org)
+[2016-12-08 11:40:41 +0700 MacBook-Pro.local (15500)] ERROR : Failed to read or parse configuration file at config/newrelic.yml
+[2016-12-08 11:40:41 +0700 MacBook-Pro.local (15500)] ERROR : Psych::SyntaxError: (<unknown>): did not find expected key while parsing a block mapping at line 137 column 5
+[2016-12-08 11:40:41 +0700 MacBook-Pro.local (15500)] INFO : Environment: development
+[2016-12-08 11:40:41 +0700 MacBook-Pro.local (15500)] INFO : Dispatcher: thin
+[2016-12-08 11:40:41 +0700 MacBook-Pro.local (15500)] INFO : Application: development
+[2016-12-08 11:40:41 +0700 MacBook-Pro.local (15500)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[2016-12-08 11:40:41 +0700 MacBook-Pro.local (15500)] INFO : Installing Net instrumentation
+[2016-12-08 11:40:41 +0700 MacBook-Pro.local (15500)] INFO : Installing Sinatra instrumentation
+[2016-12-08 11:40:41 +0700 MacBook-Pro.local (15500)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-12-08 11:40:41 +0700 MacBook-Pro.local (15500)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-12-08 11:40:41 +0700 MacBook-Pro.local (15500)] INFO : Installing Sequel instrumentation
+[2016-12-08 11:40:41 +0700 MacBook-Pro.local (15500)] INFO : Finished instrumentation
+[2016-12-08 11:40:41 +0700 MacBook-Pro.local (15500)] INFO : Doing deferred dependency-detection before Rack startup
+[2016-12-08 11:40:41 +0700 MacBook-Pro.local (15500)] INFO : Installing Memcache instrumentation for dalli gem
+[2016-12-08 11:41:02 +0700 MacBook-Pro.local (15500)] ERROR : Invalid license key, please contact support@newrelic.com
+[2016-12-08 11:41:02 +0700 MacBook-Pro.local (15500)] ERROR : Visit NewRelic.com to obtain a valid license key, or to upgrade your account.
+[2016-12-08 11:41:05 +0700 MacBook-Pro.local (15500)] WARN : Passing request_params to notice_error is no longer supported. Set values on the enclosing transaction or record them as custom attributes instead.
+[2016-12-08 11:41:05 +0700 MacBook-Pro.local (15500)] WARN : Passing referer to notice_error is no longer supported. Set values on the enclosing transaction or record them as custom attributes instead.
+[2016-12-08 11:52:40 +0700 MacBook-Pro.local (15802)] INFO : Starting the New Relic agent in "development" environment.
+[2016-12-08 11:52:40 +0700 MacBook-Pro.local (15802)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-12-08 11:52:40 +0700 MacBook-Pro.local (15802)] INFO : Reading configuration from config/newrelic.yml (/Users/son/Documents/cocoapods-eco-system/trunk.cocoapods.org)
+[2016-12-08 11:52:40 +0700 MacBook-Pro.local (15802)] ERROR : Failed to read or parse configuration file at config/newrelic.yml
+[2016-12-08 11:52:40 +0700 MacBook-Pro.local (15802)] ERROR : Psych::SyntaxError: (<unknown>): did not find expected key while parsing a block mapping at line 137 column 5
+[2016-12-08 11:52:40 +0700 MacBook-Pro.local (15802)] INFO : Environment: development
+[2016-12-08 11:52:40 +0700 MacBook-Pro.local (15802)] INFO : Dispatcher: thin
+[2016-12-08 11:52:40 +0700 MacBook-Pro.local (15802)] INFO : Application: development
+[2016-12-08 11:52:40 +0700 MacBook-Pro.local (15802)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[2016-12-08 11:52:40 +0700 MacBook-Pro.local (15802)] INFO : Installing Net instrumentation
+[2016-12-08 11:52:40 +0700 MacBook-Pro.local (15802)] INFO : Installing Sinatra instrumentation
+[2016-12-08 11:52:40 +0700 MacBook-Pro.local (15802)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-12-08 11:52:40 +0700 MacBook-Pro.local (15802)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-12-08 11:52:40 +0700 MacBook-Pro.local (15802)] INFO : Installing Sequel instrumentation
+[2016-12-08 11:52:40 +0700 MacBook-Pro.local (15802)] INFO : Finished instrumentation
+[2016-12-08 11:52:40 +0700 MacBook-Pro.local (15802)] INFO : Doing deferred dependency-detection before Rack startup
+[2016-12-08 11:52:40 +0700 MacBook-Pro.local (15802)] INFO : Installing Memcache instrumentation for dalli gem
+[2016-12-08 11:53:40 +0700 MacBook-Pro.local (15802)] ERROR : Invalid license key, please contact support@newrelic.com
+[2016-12-08 11:53:40 +0700 MacBook-Pro.local (15802)] ERROR : Visit NewRelic.com to obtain a valid license key, or to upgrade your account.
+[2016-12-08 11:53:42 +0700 MacBook-Pro.local (15802)] WARN : Passing request_params to notice_error is no longer supported. Set values on the enclosing transaction or record them as custom attributes instead.
+[2016-12-08 11:53:42 +0700 MacBook-Pro.local (15802)] WARN : Passing referer to notice_error is no longer supported. Set values on the enclosing transaction or record them as custom attributes instead.
+[2016-12-08 11:56:57 +0700 MacBook-Pro.local (16309)] INFO : Starting the New Relic agent in "development" environment.
+[2016-12-08 11:56:57 +0700 MacBook-Pro.local (16309)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-12-08 11:56:57 +0700 MacBook-Pro.local (16309)] INFO : Reading configuration from config/newrelic.yml (/Users/son/Documents/cocoapods-eco-system/trunk.cocoapods.org)
+[2016-12-08 11:56:57 +0700 MacBook-Pro.local (16309)] ERROR : Failed to read or parse configuration file at config/newrelic.yml
+[2016-12-08 11:56:57 +0700 MacBook-Pro.local (16309)] ERROR : Psych::SyntaxError: (<unknown>): did not find expected key while parsing a block mapping at line 137 column 5
+[2016-12-08 11:56:57 +0700 MacBook-Pro.local (16309)] INFO : Environment: development
+[2016-12-08 11:56:57 +0700 MacBook-Pro.local (16309)] INFO : Dispatcher: thin
+[2016-12-08 11:56:57 +0700 MacBook-Pro.local (16309)] INFO : Application: development
+[2016-12-08 11:56:57 +0700 MacBook-Pro.local (16309)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[2016-12-08 11:56:57 +0700 MacBook-Pro.local (16309)] INFO : Installing Net instrumentation
+[2016-12-08 11:56:57 +0700 MacBook-Pro.local (16309)] INFO : Installing Sinatra instrumentation
+[2016-12-08 11:56:57 +0700 MacBook-Pro.local (16309)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-12-08 11:56:57 +0700 MacBook-Pro.local (16309)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-12-08 11:56:57 +0700 MacBook-Pro.local (16309)] INFO : Installing Sequel instrumentation
+[2016-12-08 11:56:57 +0700 MacBook-Pro.local (16309)] INFO : Finished instrumentation
+[2016-12-08 11:56:57 +0700 MacBook-Pro.local (16309)] INFO : Doing deferred dependency-detection before Rack startup
+[2016-12-08 11:56:57 +0700 MacBook-Pro.local (16309)] INFO : Installing Memcache instrumentation for dalli gem
+[2016-12-08 11:58:37 +0700 MacBook-Pro.local (16309)] ERROR : Invalid license key, please contact support@newrelic.com
+[2016-12-08 11:58:37 +0700 MacBook-Pro.local (16309)] ERROR : Visit NewRelic.com to obtain a valid license key, or to upgrade your account.
+[2016-12-08 11:58:40 +0700 MacBook-Pro.local (16309)] WARN : Passing request_params to notice_error is no longer supported. Set values on the enclosing transaction or record them as custom attributes instead.
+[2016-12-08 11:58:40 +0700 MacBook-Pro.local (16309)] WARN : Passing referer to notice_error is no longer supported. Set values on the enclosing transaction or record them as custom attributes instead.
+[2016-12-08 12:00:33 +0700 MacBook-Pro.local (17070)] INFO : Starting the New Relic agent in "development" environment.
+[2016-12-08 12:00:33 +0700 MacBook-Pro.local (17070)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-12-08 12:00:33 +0700 MacBook-Pro.local (17070)] INFO : Reading configuration from config/newrelic.yml (/Users/son/Documents/cocoapods-eco-system/trunk.cocoapods.org)
+[2016-12-08 12:00:33 +0700 MacBook-Pro.local (17070)] ERROR : Failed to read or parse configuration file at config/newrelic.yml
+[2016-12-08 12:00:33 +0700 MacBook-Pro.local (17070)] ERROR : Psych::SyntaxError: (<unknown>): did not find expected key while parsing a block mapping at line 137 column 5
+[2016-12-08 12:00:33 +0700 MacBook-Pro.local (17070)] INFO : Environment: development
+[2016-12-08 12:00:33 +0700 MacBook-Pro.local (17070)] INFO : Dispatcher: thin
+[2016-12-08 12:00:33 +0700 MacBook-Pro.local (17070)] INFO : Application: development
+[2016-12-08 12:00:33 +0700 MacBook-Pro.local (17070)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[2016-12-08 12:00:33 +0700 MacBook-Pro.local (17070)] INFO : Installing Net instrumentation
+[2016-12-08 12:00:33 +0700 MacBook-Pro.local (17070)] INFO : Installing Sinatra instrumentation
+[2016-12-08 12:00:33 +0700 MacBook-Pro.local (17070)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-12-08 12:00:33 +0700 MacBook-Pro.local (17070)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-12-08 12:00:33 +0700 MacBook-Pro.local (17070)] INFO : Installing Sequel instrumentation
+[2016-12-08 12:00:33 +0700 MacBook-Pro.local (17070)] INFO : Finished instrumentation
+[2016-12-08 12:00:34 +0700 MacBook-Pro.local (17070)] INFO : Doing deferred dependency-detection before Rack startup
+[2016-12-08 12:00:34 +0700 MacBook-Pro.local (17070)] INFO : Installing Memcache instrumentation for dalli gem
+[2016-12-08 12:01:29 +0700 MacBook-Pro.local (17070)] ERROR : Invalid license key, please contact support@newrelic.com
+[2016-12-08 12:01:29 +0700 MacBook-Pro.local (17070)] ERROR : Visit NewRelic.com to obtain a valid license key, or to upgrade your account.
+[2016-12-08 12:01:31 +0700 MacBook-Pro.local (17070)] WARN : Passing request_params to notice_error is no longer supported. Set values on the enclosing transaction or record them as custom attributes instead.
+[2016-12-08 12:01:31 +0700 MacBook-Pro.local (17070)] WARN : Passing referer to notice_error is no longer supported. Set values on the enclosing transaction or record them as custom attributes instead.
+[2016-12-08 12:09:04 +0700 MacBook-Pro.local (17379)] INFO : Starting the New Relic agent in "development" environment.
+[2016-12-08 12:09:04 +0700 MacBook-Pro.local (17379)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-12-08 12:09:04 +0700 MacBook-Pro.local (17379)] INFO : Reading configuration from config/newrelic.yml (/Users/son/Documents/cocoapods-eco-system/trunk.cocoapods.org)
+[2016-12-08 12:09:04 +0700 MacBook-Pro.local (17379)] ERROR : Failed to read or parse configuration file at config/newrelic.yml
+[2016-12-08 12:09:04 +0700 MacBook-Pro.local (17379)] ERROR : Psych::SyntaxError: (<unknown>): did not find expected key while parsing a block mapping at line 137 column 5
+[2016-12-08 12:09:04 +0700 MacBook-Pro.local (17379)] INFO : Environment: development
+[2016-12-08 12:09:04 +0700 MacBook-Pro.local (17379)] INFO : Dispatcher: thin
+[2016-12-08 12:09:04 +0700 MacBook-Pro.local (17379)] INFO : Application: development
+[2016-12-08 12:09:04 +0700 MacBook-Pro.local (17379)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[2016-12-08 12:09:04 +0700 MacBook-Pro.local (17379)] INFO : Installing Net instrumentation
+[2016-12-08 12:09:04 +0700 MacBook-Pro.local (17379)] INFO : Installing Sinatra instrumentation
+[2016-12-08 12:09:04 +0700 MacBook-Pro.local (17379)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-12-08 12:09:04 +0700 MacBook-Pro.local (17379)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-12-08 12:09:04 +0700 MacBook-Pro.local (17379)] INFO : Installing Sequel instrumentation
+[2016-12-08 12:09:04 +0700 MacBook-Pro.local (17379)] INFO : Finished instrumentation
+[2016-12-08 12:09:04 +0700 MacBook-Pro.local (17379)] INFO : Doing deferred dependency-detection before Rack startup
+[2016-12-08 12:09:04 +0700 MacBook-Pro.local (17379)] INFO : Installing Memcache instrumentation for dalli gem
+[2016-12-08 12:09:33 +0700 MacBook-Pro.local (17379)] ERROR : Invalid license key, please contact support@newrelic.com
+[2016-12-08 12:09:33 +0700 MacBook-Pro.local (17379)] ERROR : Visit NewRelic.com to obtain a valid license key, or to upgrade your account.
+[2016-12-08 12:09:36 +0700 MacBook-Pro.local (17379)] WARN : Passing request_params to notice_error is no longer supported. Set values on the enclosing transaction or record them as custom attributes instead.
+[2016-12-08 12:09:36 +0700 MacBook-Pro.local (17379)] WARN : Passing referer to notice_error is no longer supported. Set values on the enclosing transaction or record them as custom attributes instead.
+[2016-12-08 13:32:31 +0700 MacBook-Pro.local (17587)] INFO : Starting the New Relic agent in "development" environment.
+[2016-12-08 13:32:31 +0700 MacBook-Pro.local (17587)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-12-08 13:32:31 +0700 MacBook-Pro.local (17587)] INFO : Reading configuration from config/newrelic.yml (/Users/son/Documents/cocoapods-eco-system/trunk.cocoapods.org)
+[2016-12-08 13:32:31 +0700 MacBook-Pro.local (17587)] ERROR : Failed to read or parse configuration file at config/newrelic.yml
+[2016-12-08 13:32:31 +0700 MacBook-Pro.local (17587)] ERROR : Psych::SyntaxError: (<unknown>): did not find expected key while parsing a block mapping at line 137 column 5
+[2016-12-08 13:32:31 +0700 MacBook-Pro.local (17587)] INFO : Environment: development
+[2016-12-08 13:32:31 +0700 MacBook-Pro.local (17587)] INFO : Dispatcher: thin
+[2016-12-08 13:32:31 +0700 MacBook-Pro.local (17587)] INFO : Application: development
+[2016-12-08 13:32:31 +0700 MacBook-Pro.local (17587)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[2016-12-08 13:32:31 +0700 MacBook-Pro.local (17587)] INFO : Installing Net instrumentation
+[2016-12-08 13:32:31 +0700 MacBook-Pro.local (17587)] INFO : Installing Sinatra instrumentation
+[2016-12-08 13:32:31 +0700 MacBook-Pro.local (17587)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-12-08 13:32:31 +0700 MacBook-Pro.local (17587)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-12-08 13:32:31 +0700 MacBook-Pro.local (17587)] INFO : Installing Sequel instrumentation
+[2016-12-08 13:32:31 +0700 MacBook-Pro.local (17587)] INFO : Finished instrumentation
+[2016-12-08 13:32:31 +0700 MacBook-Pro.local (17587)] INFO : Doing deferred dependency-detection before Rack startup
+[2016-12-08 13:32:31 +0700 MacBook-Pro.local (17587)] INFO : Installing Memcache instrumentation for dalli gem
+[2016-12-08 13:35:19 +0700 MacBook-Pro.local (17587)] ERROR : Invalid license key, please contact support@newrelic.com
+[2016-12-08 13:35:19 +0700 MacBook-Pro.local (17587)] ERROR : Visit NewRelic.com to obtain a valid license key, or to upgrade your account.
+[2016-12-08 13:38:44 +0700 MacBook-Pro.local (18401)] INFO : Starting the New Relic agent in "development" environment.
+[2016-12-08 13:38:44 +0700 MacBook-Pro.local (18401)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-12-08 13:38:44 +0700 MacBook-Pro.local (18401)] INFO : Reading configuration from config/newrelic.yml (/Users/son/Documents/cocoapods-eco-system/trunk.cocoapods.org)
+[2016-12-08 13:38:44 +0700 MacBook-Pro.local (18401)] ERROR : Failed to read or parse configuration file at config/newrelic.yml
+[2016-12-08 13:38:44 +0700 MacBook-Pro.local (18401)] ERROR : Psych::SyntaxError: (<unknown>): did not find expected key while parsing a block mapping at line 137 column 5
+[2016-12-08 13:38:44 +0700 MacBook-Pro.local (18401)] INFO : Environment: development
+[2016-12-08 13:38:44 +0700 MacBook-Pro.local (18401)] INFO : Dispatcher: thin
+[2016-12-08 13:38:44 +0700 MacBook-Pro.local (18401)] INFO : Application: development
+[2016-12-08 13:38:44 +0700 MacBook-Pro.local (18401)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[2016-12-08 13:38:44 +0700 MacBook-Pro.local (18401)] INFO : Installing Net instrumentation
+[2016-12-08 13:38:44 +0700 MacBook-Pro.local (18401)] INFO : Installing Sinatra instrumentation
+[2016-12-08 13:38:44 +0700 MacBook-Pro.local (18401)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-12-08 13:38:44 +0700 MacBook-Pro.local (18401)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-12-08 13:38:44 +0700 MacBook-Pro.local (18401)] INFO : Installing Sequel instrumentation
+[2016-12-08 13:38:44 +0700 MacBook-Pro.local (18401)] INFO : Finished instrumentation
+[2016-12-08 13:38:44 +0700 MacBook-Pro.local (18401)] INFO : Doing deferred dependency-detection before Rack startup
+[2016-12-08 13:38:44 +0700 MacBook-Pro.local (18401)] INFO : Installing Memcache instrumentation for dalli gem
+[2016-12-08 13:41:06 +0700 MacBook-Pro.local (18401)] ERROR : Invalid license key, please contact support@newrelic.com
+[2016-12-08 13:41:06 +0700 MacBook-Pro.local (18401)] ERROR : Visit NewRelic.com to obtain a valid license key, or to upgrade your account.
+[2016-12-08 14:00:51 +0700 MacBook-Pro.local (18764)] INFO : Starting the New Relic agent in "development" environment.
+[2016-12-08 14:00:51 +0700 MacBook-Pro.local (18764)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-12-08 14:00:51 +0700 MacBook-Pro.local (18764)] INFO : Reading configuration from config/newrelic.yml (/Users/son/Documents/cocoapods-eco-system/trunk.cocoapods.org)
+[2016-12-08 14:00:51 +0700 MacBook-Pro.local (18764)] ERROR : Failed to read or parse configuration file at config/newrelic.yml
+[2016-12-08 14:00:51 +0700 MacBook-Pro.local (18764)] ERROR : Psych::SyntaxError: (<unknown>): did not find expected key while parsing a block mapping at line 137 column 5
+[2016-12-08 14:00:51 +0700 MacBook-Pro.local (18764)] INFO : Environment: development
+[2016-12-08 14:00:51 +0700 MacBook-Pro.local (18764)] INFO : Dispatcher: thin
+[2016-12-08 14:00:51 +0700 MacBook-Pro.local (18764)] INFO : Application: development
+[2016-12-08 14:00:51 +0700 MacBook-Pro.local (18764)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[2016-12-08 14:00:52 +0700 MacBook-Pro.local (18764)] INFO : Installing Net instrumentation
+[2016-12-08 14:00:52 +0700 MacBook-Pro.local (18764)] INFO : Installing Sinatra instrumentation
+[2016-12-08 14:00:52 +0700 MacBook-Pro.local (18764)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-12-08 14:00:52 +0700 MacBook-Pro.local (18764)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-12-08 14:00:52 +0700 MacBook-Pro.local (18764)] INFO : Installing Sequel instrumentation
+[2016-12-08 14:00:52 +0700 MacBook-Pro.local (18764)] INFO : Finished instrumentation
+[2016-12-08 14:00:52 +0700 MacBook-Pro.local (18764)] INFO : Doing deferred dependency-detection before Rack startup
+[2016-12-08 14:00:52 +0700 MacBook-Pro.local (18764)] INFO : Installing Memcache instrumentation for dalli gem
+[2016-12-08 14:01:52 +0700 MacBook-Pro.local (18764)] ERROR : Invalid license key, please contact support@newrelic.com
+[2016-12-08 14:01:52 +0700 MacBook-Pro.local (18764)] ERROR : Visit NewRelic.com to obtain a valid license key, or to upgrade your account.
+[2016-12-08 14:16:44 +0700 MacBook-Pro.local (19106)] INFO : Starting the New Relic agent in "development" environment.
+[2016-12-08 14:16:44 +0700 MacBook-Pro.local (19106)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-12-08 14:16:44 +0700 MacBook-Pro.local (19106)] INFO : Reading configuration from config/newrelic.yml (/Users/son/Documents/cocoapods-eco-system/trunk.cocoapods.org)
+[2016-12-08 14:16:44 +0700 MacBook-Pro.local (19106)] ERROR : Failed to read or parse configuration file at config/newrelic.yml
+[2016-12-08 14:16:44 +0700 MacBook-Pro.local (19106)] ERROR : Psych::SyntaxError: (<unknown>): did not find expected key while parsing a block mapping at line 137 column 5
+[2016-12-08 14:16:44 +0700 MacBook-Pro.local (19106)] INFO : Environment: development
+[2016-12-08 14:16:44 +0700 MacBook-Pro.local (19106)] INFO : Dispatcher: thin
+[2016-12-08 14:16:44 +0700 MacBook-Pro.local (19106)] INFO : Application: development
+[2016-12-08 14:16:44 +0700 MacBook-Pro.local (19106)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[2016-12-08 14:16:44 +0700 MacBook-Pro.local (19106)] INFO : Installing Net instrumentation
+[2016-12-08 14:16:44 +0700 MacBook-Pro.local (19106)] INFO : Installing Sinatra instrumentation
+[2016-12-08 14:16:44 +0700 MacBook-Pro.local (19106)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-12-08 14:16:44 +0700 MacBook-Pro.local (19106)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-12-08 14:16:44 +0700 MacBook-Pro.local (19106)] INFO : Installing Sequel instrumentation
+[2016-12-08 14:16:44 +0700 MacBook-Pro.local (19106)] INFO : Finished instrumentation
+[2016-12-08 14:16:44 +0700 MacBook-Pro.local (19106)] INFO : Doing deferred dependency-detection before Rack startup
+[2016-12-08 14:16:44 +0700 MacBook-Pro.local (19106)] INFO : Installing Memcache instrumentation for dalli gem
+[2016-12-08 14:17:37 +0700 MacBook-Pro.local (19106)] ERROR : Invalid license key, please contact support@newrelic.com
+[2016-12-08 14:17:37 +0700 MacBook-Pro.local (19106)] ERROR : Visit NewRelic.com to obtain a valid license key, or to upgrade your account.

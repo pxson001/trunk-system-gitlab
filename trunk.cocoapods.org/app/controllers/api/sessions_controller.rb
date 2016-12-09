@@ -1,4 +1,4 @@
-require 'app/controllers/api_controller'
+  require 'app/controllers/api_controller'
 require 'app/models/owner'
 require 'app/models/session'
 

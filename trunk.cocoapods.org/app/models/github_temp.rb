@@ -6,17 +6,16 @@ require 'base64'
 module Pod
   module TrunkApp
     class GitHub
-      # BASE_URL = 'https://gitlab.com/api/v3/projects/%s'.freeze
-      BASE_URL = 'http://192.168.99.100:10080/api/v3/projects/%s'.freeze
-      HEADERS  = { 'Accept' => 'application/json', 'Content-Type' => 'application/json', 'PRIVATE-TOKEN' => ENV['GL_TOKEN'] }.freeze
+      BASE_URL = 'https://api.github.com/repos/%s'.freeze
+      HEADERS  = { 'Accept' => 'application/json', 'Content-Type' => 'application/json' }.freeze
       BRANCH   = 'master'
 
       attr_reader :basic_auth
 
-      # @param [String] repo_id  Should be in the form of 'owner/repo'.
+      # @param [String] repo_name  Should be in the form of 'owner/repo'.
       #
-      def initialize(repo_id, basic_auth)
-        @base_url   = BASE_URL % repo_id
+      def initialize(repo_name, basic_auth)
+        @base_url   = BASE_URL % repo_name
         @basic_auth = basic_auth
       end
 
@@ -24,12 +23,13 @@ module Pod
       #
       def create_new_commit(destination_path, data, message, author_name, author_email, update: false)
         CommitResponse.new do
-          post('repository/files?file_path=' + URI.escape(destination_path),
-              :commit_message   => message,
-              :branch_name    => BRANCH,
-              :content   => data,
-              :author_name    => ENV['GH_USERNAME'],
-              :author_email => ENV['GH_EMAIL'],
+          put(File.join('contents', URI.escape(destination_path)),
+              :message   => message,
+              :branch    => BRANCH,
+              :sha       => (sha_for_file_at_path(destination_path) if update),
+              :content   => Base64.encode64(data).delete("\r\n"),
+              :author    => { :name => author_name,        :email => author_email },
+              :committer => { :name => ENV['GH_USERNAME'], :email => ENV['GH_EMAIL'] },
              )
         end
       end
@@ -38,20 +38,12 @@ module Pod
       #
       def delete_file_at_path(destination_path, message, author_name, author_email)
         CommitResponse.new do
-          delete('repository/files?file_path=' + URI.escape(destination_path),
-                 :commit_message   => message,
-                 :branch_name    => BRANCH,
-                 :author_name    => ENV['GH_USERNAME'],
-                 :author_email => ENV['GH_EMAIL'],
+          delete(File.join('contents', URI.escape(destination_path)),
+                 :message   => message,
+                 :sha       => sha_for_file_at_path(destination_path),
+                 :author    => { :name => author_name,        :email => author_email },
+                 :committer => { :name => ENV['GH_USERNAME'], :email => ENV['GH_EMAIL'] },
                 )
-        end
-      end
-
-      # @return [RepositeFileResponse] A encapsulated response object that parses the `commit_sha`.
-      #
-      def get_reposite_file(destination_path)
-        RepositeFileResponse.new do
-          get('repository/files?file_path=' + URI.escape(destination_path) + '&ref=' + BRANCH)
         end
       end
 
@@ -59,7 +51,7 @@ module Pod
       #
       def file_for_path(path)
         CommitResponse.new do
-          get('repository/files?file_path=' + URI.escape(path) + '&ref=' + BRANCH)
+          get(File.join('contents', URI.escape(path)))
         end
       end
 
@@ -68,7 +60,7 @@ module Pod
       #
       def sha_for_file_at_path(path)
         response = file_for_path(path)
-        JSON.parse(response.body)['commit_id'] if response.success?
+        JSON.parse(response.body)['sha'] if response.success?
       end
 
       # @return [String] A full API route for a path
@@ -87,12 +79,6 @@ module Pod
       #
       def put(path, body)
         perform_request(:put, path, body)
-      end
-
-      # Performs a POST request.
-      #
-      def post(path, body)
-        perform_request(:post, path, body)
       end
 
       # Performs a DELETE request.
@@ -162,64 +148,9 @@ module Pod
         end
 
         def commit_sha
-          @commit_sha ||= JSON.parse(body)['file_name']
+          @commit_sha ||= JSON.parse(body)['commit']['sha']
         end
       end
-
-      class RepositeFileResponse
-        attr_reader :timeout_error
-
-        def initialize
-          @response = yield
-          case @response.status_code
-          when 200...400
-            # no-op
-          when 400...500
-            @failed_on_our_side = true
-          when 500...600
-            @failed_on_their_side = true
-          else
-            raise "returned an unexpected HTTP response: #{@response.inspect}"
-          end
-        rescue REST::Error::Timeout => e
-          @timeout_error = "[#{e.class.name}] #{e.message}"
-        end
-
-        # @return [Number] The status code for the HTTP response
-        def status_code
-          @response.status_code
-        end
-
-        # @return [String] The body for the HTTP response
-        def body
-          @response.body
-        end
-
-        # @return [String] The header value for a specific key on the HTTP response
-        def header(name)
-          @response[name]
-        end
-
-        attr_reader :failed_on_our_side
-        alias_method :failed_on_our_side?, :failed_on_our_side
-
-        attr_reader :failed_on_their_side
-        alias_method :failed_on_their_side?, :failed_on_their_side
-
-        def failed_due_to_timeout?
-          !@timeout_error.nil?
-        end
-
-        # @return [Bool] Was the HTTP request successful?
-        def success?
-          !failed_on_our_side? && !failed_on_their_side? && !failed_due_to_timeout?
-        end
-
-        def commit_sha
-          @commit_sha ||= JSON.parse(body)['commit_id']
-        end
-      end
-
     end
   end
 end

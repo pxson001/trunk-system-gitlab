@@ -8,11 +8,7 @@ module Pod
     class PodVersion < Sequel::Model
       include Concerns::GitCommitSHAValidator
 
-      # DATA_URL = "https://gitlab.com/api/v3/projects/#{ENV['GL_PROJ_ID']}/repository/blobs/%s?filepath=%s"
-
-      DATA_URL = "http://192.168.99.100:10080/api/v3/projects/#{ENV['GL_PROJ_ID']}/repository/blobs/%s?filepath=%s"
-
-
+      DATA_URL = "https://raw.githubusercontent.com/#{ENV['GH_REPO']}/%s/%s"
 
       SOURCE_METADATA = Source::Metadata.new YAML.load(ENV.fetch('MASTER_SOURCE_METADATA') { '{}' })
       PRE_SHARD_SOURCE_METADATA = Source::Metadata.new({})
@@ -101,12 +97,7 @@ module Pod
         response = PushJob.new(self, committer, specification_data, change_type).push!
         if response.success?
           update(:deleted => change_type == 'Delete')
-
-          fileResponse = PushJob.new(self, committer, specification_data, change_type).pull!
-          if fileResponse.success?
-            add_commit(:committer => committer, :sha => fileResponse.commit_sha, :specification_data => specification_data)
-          end
-
+          add_commit(:committer => committer, :sha => response.commit_sha, :specification_data => specification_data)
           pod.add_owner(committer) if pod.owners.empty?
         end
         pod.update(:deleted => pod.versions_dataset.count(:deleted => false).zero?)

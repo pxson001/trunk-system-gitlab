@@ -5,7 +5,7 @@ RUN apt-key adv --keyserver keyserver.ubuntu.com --recv-keys B97B0AFCAA1A47F044F
 RUN echo "deb http://apt.postgresql.org/pub/repos/apt/ precise-pgdg main" > /etc/apt/sources.list.d/pgdg.list
 RUN apt-get update && apt-get -y -q install python-software-properties software-properties-common \
     && apt-get -y -q install postgresql-9.3 postgresql-client-9.3 postgresql-contrib-9.3 libpq-dev postgresql-server-dev-9.3
-RUN apt-get install dnsutils -y
+RUN apt-get -y install dnsutils
 RUN apt-get -y install locales
 RUN apt-get -y install cmake
 RUN echo 'en_US.UTF-8 UTF-8'>>/etc/locale.gen
