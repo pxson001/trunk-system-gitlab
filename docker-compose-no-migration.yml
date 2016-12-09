@@ -14,7 +14,7 @@ services:
     image: trunk-image
     build: ./trunk.cocoapods.org
     container_name: trunk-image
-    command: bash -c "cd Humus && rake db:bootstrap && cd .. && TRUNK_APP_ADMIN_PASSWORD=admin GH_TOKEN=6aa453351cedb84f87120c6919a70b23c61cc086 rake serve"
+    command: bash -c "TRUNK_APP_ADMIN_PASSWORD=admin GH_TOKEN=6aa453351cedb84f87120c6919a70b23c61cc086 rake serve"
     volumes:
       - ./trunk.cocoapods.org:/trunk
     ports:
